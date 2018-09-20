@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "pring-no-admin",
-  "version": "0.19.2",
+  "version": "0.19.3",
   "scripts": {
     "lint": "./node_modules/.bin/tslint -p tslint.json",
     "build": "./node_modules/.bin/tsc -d",
@@ -35,12 +35,8 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
-    "@firebase/firestore": "^0.8.0",
-    "@google-cloud/firestore": "^0.16.1",
     "@types/uuid": "^3.4.4",
     "firebase": "^5.5.0",
-    "react-native-firebase":
-      "git+https://github.com/invertase/react-native-firebase.git",
     "reflect-metadata": "^0.1.12",
     "uuid": "^3.3.2"
   },
