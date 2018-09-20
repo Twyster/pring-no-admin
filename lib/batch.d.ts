@@ -1,4 +1,3 @@
-import * as FirebaseFirestore from '@google-cloud/firestore';
 import { DocumentReference, WriteBatch, SetOptions, UpdateData, DocumentData } from './base';
 export declare enum BatchType {
     save = 0,
@@ -12,7 +11,6 @@ export interface Batchable {
 }
 export declare class Batch {
     private _writeBatch?;
-    private _adminWriteBatch?;
     constructor(writeBatch: WriteBatch);
     /**
      * Writes to the document referred to by the provided `DocumentReference`.
@@ -65,6 +63,6 @@ export declare class Batch {
      * successfully written to the backend as an atomic unit. Note that it won't
      * resolve while you're offline.
      */
-    commit(): Promise<void | FirebaseFirestore.WriteResult[]>;
+    commit(): Promise<void>;
     batch(): WriteBatch;
 }

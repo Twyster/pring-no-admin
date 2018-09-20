@@ -1,6 +1,6 @@
 {
   "private": false,
-  "name": "pring",
+  "name": "pring-no-admin",
   "version": "0.19.2",
   "scripts": {
     "lint": "./node_modules/.bin/tslint -p tslint.json",
@@ -16,19 +16,17 @@
     {
       "name": "Norikazu Muramoto",
       "email": "tmy0x3@icloud.com"
+    },
+    {
+      "name": "Diwank Tomer",
+      "email": "diwank.tomer@twyster.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1amageek/pring.ts.git"
+    "url": "git+https://github.com/Twyster/pring.ts.git"
   },
-  "keywords": [
-    "firestore",
-    "firebase",
-    "pring",
-    "model",
-    "typescript"
-  ],
+  "keywords": ["firestore", "firebase", "pring", "model", "typescript"],
   "author": "1amageek",
   "license": "MIT",
   "bugs": {
@@ -37,9 +35,12 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "dependencies": {
+    "@firebase/firestore": "^0.8.0",
     "@google-cloud/firestore": "^0.16.1",
     "@types/uuid": "^3.4.4",
-    "firebase": "^5.4.2",
+    "firebase": "^5.5.0",
+    "react-native-firebase":
+      "git+https://github.com/invertase/react-native-firebase.git",
     "reflect-metadata": "^0.1.12",
     "uuid": "^3.3.2"
   },
@@ -49,6 +50,7 @@
     "firebase-admin": "^6.0.0",
     "jest": "^23.5.0",
     "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3"
   },
@@ -57,13 +59,6 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ]
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
   }
 }

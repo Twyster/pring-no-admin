@@ -1,4 +1,3 @@
-import * as FirebaseFirestore from '@google-cloud/firestore'
 import { Base, QuerySnapshot, DocumentData, DocumentChange, QueryDocumentSnapshot } from './base'
 import { Query } from './query'
 
@@ -114,11 +113,8 @@ export class DataSource<Element extends Base> {
 
     private async _operate(snapshot: QuerySnapshot, isFirst: boolean) {
         let changes: DocumentChange[] = []
-        if (snapshot instanceof FirebaseFirestore.QuerySnapshot) {
-            changes = snapshot.docChanges
-        } else {
-            changes = snapshot.docChanges()
-        }
+        changes = snapshot.docChanges()
+
         changes.forEach(async change => {
             const id: string = change.doc.id
             switch (change.type) {
