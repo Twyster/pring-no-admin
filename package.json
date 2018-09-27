@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "pring-no-admin",
-  "version": "0.19.4",
+  "version": "0.19.5",
   "scripts": {
     "lint": "./node_modules/.bin/tslint -p tslint.json",
     "build": "./node_modules/.bin/tsc -d",
@@ -26,7 +26,13 @@
     "type": "git",
     "url": "git+https://github.com/Twyster/pring.ts.git"
   },
-  "keywords": ["firestore", "firebase", "pring", "model", "typescript"],
+  "keywords": [
+    "firestore",
+    "firebase",
+    "pring",
+    "model",
+    "typescript"
+  ],
   "author": "1amageek",
   "license": "MIT",
   "bugs": {
@@ -55,6 +61,13 @@
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   }
 }
