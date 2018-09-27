@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase';
 import "reflect-metadata";
 import { NestedCollection } from './nestedCollection';
 import { Batchable, BatchType } from './batch';

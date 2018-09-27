@@ -1,5 +1,5 @@
 import { } from "reflect-metadata"
-import * as firebase from 'firebase'
+import firebase from 'firebase'
 import { BatchType, Batch } from './batch'
 import { firestore } from './index'
 import {

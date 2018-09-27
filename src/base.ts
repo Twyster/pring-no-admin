@@ -1,5 +1,5 @@
 import * as UUID from 'uuid'
-import * as firebase from 'firebase'
+import firebase from 'firebase'
 import "reflect-metadata"
 
 import { firestore, timestamp } from './index';
